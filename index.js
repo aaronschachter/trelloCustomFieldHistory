@@ -14,10 +14,6 @@ app.get('/webhook', (req, res) => {
   res.send('Hello World');
 });
 
-app.get('/webhook', (req, res) => {
-  res.send('Hello World');
-});
-
 app.post('/webhook', (req, res) => {
   trello.handleWebhookRequest(req.body);
   res.send('Hello World');
